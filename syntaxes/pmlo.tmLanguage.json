@@ -1,0 +1,55 @@
+{
+    "fileTypes": [
+      "pmlo"
+    ],
+    "name": "pmlo",
+    "patterns": [
+      {
+        "include": "#main"
+      }
+    ],
+    "scopeName": "source.pmlo",
+    "uuid": "704487fd-1c4f-4b7b-802a-aeebe5c70e1b",
+    "repository": {
+      "main": {
+        "patterns": [
+          {
+            "match": "(\\@.*)",
+            "name": "comment.pmlo"
+          },
+          {
+            "match": "(\".*\")",
+            "name": "string.quoted.double.pmlo"
+          },
+          {
+            "match": "(\\[|\\])",
+            "name": "entity.name.tag.pmlo"
+          },
+          {
+            "match": "(\\d\\.\\.\\d+)",
+            "name": "constant.numeric.pmlo"
+          },
+          {
+            "match": "(\\d+)",
+            "name": "constant.numeric.pmlo"
+          },
+          {
+            "match": "(::[A-Z_]+)",
+            "name": "keyword.control.pmlo"
+          },
+          {
+            "match": "([a-z_]+:[A-Z_]+)",
+            "name": "keyword.control.pmlo"
+          },
+          {
+            "match": "([a-z_]+<[a-z]>)",
+            "name": "variable.language.pmlo"
+          },
+          {
+            "match": "([a-z_]+<[0-9]>)",
+            "name": "support.type.pmlo"
+          }
+        ]
+      }
+    }
+  }

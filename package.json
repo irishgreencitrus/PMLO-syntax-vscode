@@ -1,0 +1,25 @@
+{
+    "name": "pmlo",
+    "displayName": "Pomelo Language Support",
+    "description": "Syntax highlighting for the Pomelo programming language",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.60.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "pmlo",
+            "aliases": ["pmlo"],
+            "extensions": [".pmlo"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "pmlo",
+            "scopeName": "source.pmlo",
+            "path": "./syntaxes/pmlo.tmLanguage.json"
+        }]
+    }
+}
