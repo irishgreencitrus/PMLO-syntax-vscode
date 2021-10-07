@@ -42,11 +42,11 @@
             "name": "keyword.control.pmlo"
           },
           {
-            "match": "([a-z_]+<[a-z]>)",
+            "match": "([a-z_]+\\([a-z]\\))",
             "name": "variable.language.pmlo"
           },
           {
-            "match": "([a-z_]+<[0-9]>)",
+            "match": "([a-z_]+\\([0-9]\\))",
             "name": "support.type.pmlo"
           }
         ]
